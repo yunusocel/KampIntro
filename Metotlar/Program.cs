@@ -19,10 +19,23 @@ namespace Metotlar
 
             Urun[] urunler = new Urun[] {urun1,urun2};
 
+            foreach(Urun urun in urunler)   //foreach(var urun in urunler) 
+            {
+                Console.WriteLine(urun.Adi);
+                Console.WriteLine(urun.Fiyati);
+                Console.WriteLine(urun.Aciklama);
+                Console.WriteLine("-------------------");
+            }
 
+            Console.WriteLine("-----------------------Metotlar-----------------------");
 
+            SepetManager sepetManager = new SepetManager();
+            sepetManager.Ekle(urun1);
+            sepetManager.Ekle(urun2);
 
-            Console.WriteLine("Hello World!");
+            sepetManager.Ekle2("Armut", "Yesil Armut", 12, 10);
+            sepetManager.Ekle2("Kayısı", "Kucuk Kayisi", 12, 9);
+            sepetManager.Ekle2("Portakal", "Buyuk Portakal", 12, 8);
         }
     }
 }
