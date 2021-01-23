@@ -8,6 +8,7 @@ namespace OOP1
     {
         public void Add(Product product)
         {
+
             //product.ProductName = "Kamera";
             Console.WriteLine(product.ProductName + " eklendi.");
         }
