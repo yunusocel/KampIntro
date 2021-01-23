@@ -12,6 +12,7 @@ namespace Matematik
             while (true)
             {
 
+
                 Console.WriteLine("Lutfen yapmak istediginiz islemi seciniz: ");
                 Console.WriteLine("1-Toplama");
                 Console.WriteLine("2-Cikarma");
